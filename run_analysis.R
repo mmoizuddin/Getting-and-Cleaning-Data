@@ -97,5 +97,5 @@ library(data.table)
 ##
 
 # Write tidy data sets to CSV file in "UCI HAR Dataset" working dir 
-        write.csv(tidyDataset, file="UCIHARTidyDataset.csv", row.names=FALSE, quote = FALSE)
+        write.table(tidyDataset, file="UCIHARTidyDataset.txt", sep="\t", row.names=FALSE))
 ##
