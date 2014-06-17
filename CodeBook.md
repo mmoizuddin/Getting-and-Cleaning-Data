@@ -1,8 +1,12 @@
 # Code Book
 ## Getting-and-Cleaning-Data Course Project
 
-The script attached [run_analysis.R] (https://github.com/mmoizuddin/Getting-and-Cleaning-Data/blob/master/run_analysis.R) does the following tasks
-## The dataset includes the following files:
+The script is tested on **Studio R Version 0.98.501 ** . Google **Chrome Version 35.0.1916.153 m**  (Windows NT 6.2; WOW64) 
+
+The script [run_analysis.R] (https://github.com/mmoizuddin/Getting-and-Cleaning-Data/blob/master/run_analysis.R) must be copied in default working directory. 
+The script will download the dataset zip file and unzip the file in directory "UCI HAR Dataset/"
+
+### The dataset includes the following files:
 
 - 'README.txt'
 - 'features_info.txt': Shows information about the variables used on the feature vector.
@@ -13,7 +17,7 @@ The script attached [run_analysis.R] (https://github.com/mmoizuddin/Getting-and-
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
 
-The following files are available for the train and test data. Their descriptions are equivalent. 
+### The following files are available for the train and test data. Their descriptions are equivalent. 
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 - 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
