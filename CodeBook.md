@@ -1,7 +1,7 @@
 # Code Book
 ## Getting-and-Cleaning-Data Course Project
 
-The script is tested on **Studio R Version 0.98.501 ** . Google **Chrome Version 35.0.1916.153 m**  (Windows NT 6.2; WOW64) 
+The script is tested on **Studio R Version 0.98.501. Google Chrome Version 35.0.1916.153 m**  (Windows NT 6.2; WOW64) 
 
 The script [run_analysis.R] (https://github.com/mmoizuddin/Getting-and-Cleaning-Data/blob/master/run_analysis.R) must be copied in default working directory. 
 The script will download the dataset zip file and unzip the file in directory "UCI HAR Dataset/"
