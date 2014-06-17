@@ -1,5 +1,5 @@
-# Code Book 
-# Getting-and-Cleaning-Data
+# Code Book
+## Getting-and-Cleaning-Data Course Project
 
 The script attached [run_analysis.R] (https://github.com/mmoizuddin/Getting-and-Cleaning-Data/blob/master/run_analysis.R) does the following tasks
 ## The dataset includes the following files:
