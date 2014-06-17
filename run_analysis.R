@@ -57,10 +57,10 @@ library(data.table)
         colnames(subject_train) <- "subjects"
 ##
 
-        subset_test_X   <- cbind(subject_test,  labels_test_y,  test_X )
-        subset_train_X  <- cbind(subject_train, labels_train_y, train_X)
+        placeholder_test_X   <- cbind(subject_test,  labels_test_y,  test_X )
+        placeholder_train_X  <- cbind(subject_train, labels_train_y, train_X)
 #
-        mergedDatasets <- rbind(subset_test_X, subset_train_X)
+        mergedDatasets <- rbind(placeholder_test_X, placeholder_train_X)
         mergedDatasets <- mergedDatasets[order(mergedDatasets$subjects, mergedDatasets$labels),]
 ##
         setwd("..")
@@ -96,6 +96,6 @@ library(data.table)
 # <<< Tidy Data created >>>
 ##
 
-# Write tidy data sets to CSV file in "UCI HAR Dataset" working dir 
+# Write tidy data sets to txt file in "UCI HAR Dataset" working dir 
         write.table(tidyDataset, file="UCIHARTidyDataset.txt", sep="\t", row.names=FALSE))
 ##
