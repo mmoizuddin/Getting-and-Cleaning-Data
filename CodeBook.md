@@ -30,19 +30,20 @@ The script users library: *data.table*
 ### Variables Used
   * fileUrl:        [downlaod link] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
   
-  * getFeatures:    Read all values from features.txt
-  * meanstd_idx:    Filter the indices of mean and standard deviation from getFeatures by selecting variables that contain                   "mean" or "std"    activityLabels: 
-  * test_X:         
-  labels_test_y:  
-  subject_test:   
-  train_X:         
-  labels_train_y:  
-  subject_train:  
-  subset_test_X:  
-  subset_train_X: 
-  mergedDatasets: 
-  datasetNames:   
-  tidyDataset:    
+  * getFeatures:         Load dataset from features.txt
+  * meanstd_idx:         Filter the indices of mean and standard deviation from getFeatures by selecting variables that contain "mean" or "std"    
+  * activityLabels:      Load dataset from ./activity_labels.txt
+  * test_X:              Load dataset from ./test/X_test.txt    
+  * labels_test_y:       Load dataset from ./test/y_test.txt
+  * subject_test:        Load dataset from ./test/subject_test.txt
+  * train_X:             Load dataset from ./train/X_train.txt     
+  * labels_train_y:      Load dataset from ./train/y_train.txt 
+  * subject_train:       Load dataset from ./train/subject_train.txt
+  * placeholder_test_X:  Combine test datasets labels_test_y, subject_test and test_X
+  * placeholder_train_X: Combine training datasets labels_train_y, subject_train and train_X
+  * mergedDatasets:      Merge the two datasets placeholder_test_X and placeholder_train_X using rbind
+  * datasetNames:        Used for making data tidy, fixing variables like punctuations and case adjustments 
+  * tidyDataset:         A second dataset based on tidy data with two variables *Subject* (id of subject) and *Activity* (name of activity)
   
   
 # STEP 1. Merges the training and the test sets to create one data set.
