@@ -48,29 +48,26 @@ The script uses library: *data.table*
   
 ### The script does the following tasks: 
 1. Merges the training and the test sets to create one data set.
-1.1 hello
-
-
-  1.1  download link and save zip file "UCIHARDataset.zip" in current working dir
-  1.2  unzip file and create dir "UCI HAR Dataset/"
-  1.3  load features from *features.txt* dataset in the variables *getFeatures* and create indices for mean and std in *meanstd_idx*
-  1.4  laod activity lables from *activity_labels.txt*
-  1.5  load dataset for test in **test_X** from *./test/X_text.txt*
-  1.6  load dataset for test labels in **labels_test_y** from *./test/y_test.txt*
-  1.7  load dataset for test subjects in **subject_test** from *./test/subject_test.txt*
-  1.8  load dataset for train in **train_X** from *./train/X_train.txt*
-  1.9  load dataset for train labels in **labels_train_y** from *./train/y_train.txt*
-  1.10 load dataset for train subjects in **subject_train** from *./train/subject_train.txt*
-  1.11 combine labels_test_y, subject_test and test_X datasets in single dataset **placeholder_test_X** 
-  1.12 combine labels_train_y, subject_train and train_X datasets in single dataset **placeholder_train_X** 
-  1.13 merge placeholder_test_X and placeholder_train_X using rbind into **mergedDatasets**
+  1.  download link and save zip file "UCIHARDataset.zip" in current working dir
+  2.  unzip file and create dir "UCI HAR Dataset/"
+  3.  load features from *features.txt* dataset in the variables *getFeatures* and create indices for mean and std in *meanstd_idx*
+  4.  laod activity lables from *activity_labels.txt*
+  5.  load dataset for test in **test_X** from *./test/X_text.txt*
+  6.  load dataset for test labels in **labels_test_y** from *./test/y_test.txt*
+  7.  load dataset for test subjects in **subject_test** from *./test/subject_test.txt*
+  8.  load dataset for train in **train_X** from *./train/X_train.txt*
+  9.  load dataset for train labels in **labels_train_y** from *./train/y_train.txt*
+  10. load dataset for train subjects in **subject_train** from *./train/subject_train.txt*
+  11. combine labels_test_y, subject_test and test_X datasets in single dataset **placeholder_test_X** 
+  12. combine labels_train_y, subject_train and train_X datasets in single dataset **placeholder_train_X** 
+  13 merge placeholder_test_X and placeholder_train_X using rbind into **mergedDatasets**
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-  2.1  subset **mergedDatasets** using indices create in point 1.3 " [,meanstd_idx$index] "
+  1.  subset **mergedDatasets** using indices create in point 1.3 " [,meanstd_idx$index] "
 3. Uses descriptive activity names to name the activities in the data set
-  3.1  factor the activities and assign the values to mergedDatasets$lables
+  1.  factor the activities and assign the values to mergedDatasets$lables
 4. Appropriately labels the data set with descriptive variable names. 
-  4.1  making data tidy, fixing variables like punctuations and case adjustments 
+  1.  making data tidy, fixing variables like punctuations and case adjustments 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-  5.1 create second dataset based on tidy data with two variables *Subject* (id of subject) and *Activity* (name of activity)
+  1. create second dataset based on tidy data with two variables *Subject* (id of subject) and *Activity* (name of activity)
 
 Write tidy data sets to txt file in "UCI HAR Dataset" working dir 
