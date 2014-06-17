@@ -50,7 +50,7 @@ The script uses library: *data.table*
 1. Merges the training and the test sets to create one data set.
   1.  download link and save zip file "UCIHARDataset.zip" in current working dir
   2.  unzip file and create dir "UCI HAR Dataset/"
-  3.  load features from *features.txt* dataset in the variables *getFeatures* and create indices for mean and std in *meanstd_idx*
+  3.  load features from *features.txt* in the *getFeatures* and create indices for mean and std in *meanstd_idx*
   4.  laod activity lables from *activity_labels.txt*
   5.  load dataset for test in **test_X** from *./test/X_text.txt*
   6.  load dataset for test labels in **labels_test_y** from *./test/y_test.txt*
