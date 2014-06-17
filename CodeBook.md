@@ -60,7 +60,7 @@ The script uses library: *data.table*
   10. load dataset for train subjects in **subject_train** from *./train/subject_train.txt*
   11. combine labels_test_y, subject_test and test_X datasets in single dataset **placeholder_test_X** 
   12. combine labels_train_y, subject_train and train_X datasets in single dataset **placeholder_train_X** 
-  13 merge placeholder_test_X and placeholder_train_X using rbind into **mergedDatasets**
+  13. merge placeholder_test_X and placeholder_train_X using rbind into **mergedDatasets**
 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
   1.  subset **mergedDatasets** using indices create in point 1.3 " [,meanstd_idx$index] "
 3. Uses descriptive activity names to name the activities in the data set
