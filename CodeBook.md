@@ -28,11 +28,11 @@ The script will download the dataset zip file and unzip the file in directory "U
 The script users library: *data.table*
 
 ### Variables Used
-  fileUrl:        [downlaod link] ("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip") 
+  * fileUrl:        [downlaod link] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
   
-  getFeatures:    Read all values from features.txt
-  meanstd_idx:    Filter the indices of mean and standard deviation from getFeatures by selecting variables that contain "mean" or "std"    activityLabels: 
-  test_X:         
+  * getFeatures:    Read all values from features.txt
+  * meanstd_idx:    Filter the indices of mean and standard deviation from getFeatures by selecting variables that contain                   "mean" or "std"    activityLabels: 
+  * test_X:         
   labels_test_y:  
   subject_test:   
   train_X:         
