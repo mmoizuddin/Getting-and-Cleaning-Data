@@ -4,7 +4,7 @@
 
     Repo:         Getting-and-Cleaning-Data
     Course Ref:   Getting and Cleaning Data course by John Hopkins university on Coursera
-    http Ref:     [Getting and Cleaning Data Course](https://class.coursera.org/getdata-004)
+    http Ref:     https://class.coursera.org/getdata-004
 
 ## Project Background
 Human Activity Recognition Using Smartphones Dataset
