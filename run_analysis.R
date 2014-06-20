@@ -69,7 +69,7 @@ library(data.table)
 
 
 # STEP 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-        mergedDatasets <- mergedDatasets[,meanstd_idx$index]
+         mergedDatasets <- mergedDatasets[,1:nrow(meanstd_idx)]
 # <<< filtering of mean and std ends here >>>>
 ##
 
